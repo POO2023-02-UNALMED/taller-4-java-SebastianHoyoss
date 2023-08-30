@@ -33,11 +33,17 @@ public class Persona {
         this.nombre = nombre;
         this.cedula =1;
         totalPersonas++;
+       
     }
-    
+    public Persona() {
+    	this.cedula=0;
+    	this.nombre= "";
+    	totalPersonas++;
+    }
     public long getCedula() {
         return cedula;
     }
+    
 
     public String getNombre() {
         return nombre;
